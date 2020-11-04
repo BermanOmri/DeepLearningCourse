@@ -4,6 +4,7 @@ All different settings’ training was done using the same hyper-parameters:
   * Epochs number = 100
   * Optimizer = Adam
   * Learning rate = 8e−4
+<a/>
 When evaluating the test sets, gradients calculations were turned off (for speedup), and gradient descent was not applied.
 
 ## Dropout
