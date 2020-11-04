@@ -1,2 +1,2 @@
 # DeepLearningCourse
-Deep Learning Course Assignments
+## Deep Learning Course Assignments
