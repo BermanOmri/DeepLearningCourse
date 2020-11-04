@@ -1,9 +1,9 @@
 # Hw1
 
 All different settings’ training was done using the same hyper-parameters:
-•Epochs number = 100
-•Optimizer = Adam
-•Learning rate = 8e−4
+  * Epochs number = 100
+  * Optimizer = Adam
+  * Learning rate = 8e−4
 When  evaluating  the  test  sets,  gradients  calculations  were  turned  off  (for  speedup),  and gradient descent was not applied.
 
 ## Dropout
@@ -13,6 +13,6 @@ For this setting only, the weight_decay argument of the Adam optimizer was set t
 
 ## Batch Normalization
 Batch normalization layers were added the following way:
-•One 2D batch normalization layer after the 2nd convolutional layer.
-•One  1D batch normalization  layer after  each  fully-connected  layer (except  the  final layer).
+  * One 2D batch normalization layer after the 2nd convolutional layer.
+  * One  1D batch normalization  layer after  each  fully-connected  layer (except  the  final layer).
 After several sensitivity testings over the different arguments, it appeared that none had a truly  significant effect over the final results, so the default parameters were used  (epsilon= 1e−5,  momentum=0.1). For  evaluating  the test-set, the batch normalization parameters (γ,β) were kept static.
