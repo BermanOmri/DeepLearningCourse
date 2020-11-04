@@ -21,7 +21,7 @@ Batch normalization layers were added the following way:
 After several sensitivity testings over the different arguments, it appeared that none had a truly significant effect over the final results, so the default parameters were used  (epsilon= 1e−5, momentum=0.1). For evaluating the test-set, the batch normalization parameters (γ,β) were kept static.
 
 ## How to Train:
-python hw1final.py Train nEpochs regMethod printProgress saveWeights\
+*python hw1final.py Train nEpochs regMethod printProgress saveWeights*\
 Args:
   * nEpochs  - the number of epochs used for training
   * regMethod - the used regularization method, one of {No_Regularization, Droput, Weight_Decay, Batch_Normalization}
@@ -30,7 +30,7 @@ Args:
 <a/>
 
 ## How to Test:
-python hw1final.py Test weightsPath regMethod\
+*python hw1final.py Test weightsPath regMethod*\
 Args:
   * weightsPath  - the path of the trained network's weights.
   * regMethod - the used regularization method, one of {No_Regularization, Droput, Weight_Decay, Batch_Normalization}
